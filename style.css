@@ -389,10 +389,10 @@ footer p {
 }
 
 .profile-photo {
-    width: 180px !important;
-    height: 180px !important;
-    max-width: 180px !important;
-    max-height: 180px !important;
+    width: 180px;
+    height: 180px;
+    max-width: 180px;
+    max-height: 180px;
     display: block;
     object-fit: contain;
     border-radius: 50%;
@@ -540,10 +540,10 @@ body.dark-mode .project-card {
 }
 
 .profile-photo {
-    width: 160px !important;
-    height: 160px !important;
-    max-width: 160px !important;
-    max-height: 160px !important;
+    width: 160px;
+    height: 160px;
+    max-width: 160px;
+    max-height: 160px;
     object-fit: cover;
     display: block;
     border-radius: 50%;
