@@ -4,281 +4,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prashant Guggari's developer portfolio">
+    <title>Prashant Guggari | Developer Portfolio</title>
 
-    <title>Prashant Guggari | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a class="logo" href="#home">Prashant<span>.</span></a>
 
-    <!-- Navigation -->
-    <nav>
+            <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
 
-        <h2>Prashant</h2>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-button">☰</button>
-
-        <ul id="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <button id="theme-button">
-        🌙 Dark Mode
-    </button>
-
-    </nav>
-
-
-    <!-- Home -->
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <div class="profile-photo">
-                <img src="profile.jpg" alt="Prashant Guggari" class="profile-photo">
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </div>
 
-            <p class="hello">WELCOME TO MY PORTFOLIO</p>
+            <div class="nav-actions">
+                <button class="theme-button" id="theme-button" type="button" aria-label="Switch to light mode">☀️</button>
+                <a class="button button-small" href="#contact">Let's Talk ↗</a>
+            </div>
+        </nav>
+    </header>
 
-            <h1>
-                Hi, I'm <span>Prashant Guggari</span>
-            </h1>
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-glow hero-glow-one"></div>
+            <div class="hero-glow hero-glow-two"></div>
 
-            <h2>Computer Science Engineering Student</h2>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow"><span class="status-dot"></span> Welcome to my portfolio</p>
 
-            <p class="description">
-                I am passionate about programming, web development, software development and learning new technologies.
-            </p>
+                    <h1>Hi, I'm <span>Prashant Guggari</span></h1>
+                    <h2>Computer Science Engineering Student</h2>
 
-            <div class="buttons">
+                    <p class="hero-description">
+                        Passionate about programming, web development and software engineering. I enjoy learning new technologies and building practical projects that solve real-world problems.
+                    </p>
 
-                <a href="#projects" class="btn">
-                    View My Projects
-                </a>
+                    <div class="hero-buttons">
+                        <a class="button" href="#projects">Explore My Projects ↗</a>
+                        <a class="button button-outline" href="#contact">Contact Me</a>
+                    </div>
 
-                <a href="#contact" class="btn secondary">
-                    Contact Me
-                </a>
+                    <div class="social-links">
+                        <a href="https://github.com/3713Prashant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/prashant-guggari-328416380/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    </div>
+                </div>
 
+                <div class="hero-visual">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+
+                    <div class="profile-frame">
+                        <img src="profile.jpg" alt="Prashant Guggari" class="profile-photo">
+                    </div>
+
+                    <div class="floating-tag tag-top">⌘ Web Development</div>
+                    <div class="floating-tag tag-left">✦ Problem Solving</div>
+                    <div class="floating-tag tag-bottom">↗ Always Learning</div>
+                </div>
             </div>
 
-            <!-- Social Links -->
+            <a class="scroll-cue" href="#about">Scroll to explore ↓</a>
+        </section>
 
-            <div class="social-links">
+        <section class="section section-alt" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Get to know me</p>
+                    <h2>About <span>Me</span></h2>
+                    <p>A curious learner who enjoys turning ideas into useful digital experiences.</p>
+                </div>
 
-                <a href="https://github.com/3713Prashant" target="_blank">
-                    GitHub
-                </a>
+                <div class="about-grid">
+                    <article class="glass-card about-card">
+                        <div class="card-icon">⌘</div>
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a Computer Science Engineering student interested in software development, web technologies, and practical projects.
+                        </p>
+                        <p>
+                            I enjoy learning new tools and improving my skills through hands-on work.
+                        </p>
+                    </article>
 
-                <a href="https:https://www.linkedin.com/in/prashant-guggari-328416380" target="_blank">
-                    LinkedIn
-                </a>
+                    <div class="about-highlights">
+                        <article class="glass-card highlight-card">
+                            <span class="highlight-icon">💻</span>
+                            <div>
+                                <h3>Development</h3>
+                                <p>Building responsive and user-friendly web experiences.</p>
+                            </div>
+                        </article>
 
+                        <article class="glass-card highlight-card">
+                            <span class="highlight-icon">🧠</span>
+                            <div>
+                                <h3>Problem Solving</h3>
+                                <p>Turning challenges into practical solutions.</p>
+                            </div>
+                        </article>
+
+                        <article class="glass-card highlight-card">
+                            <span class="highlight-icon">🚀</span>
+                            <div>
+                                <h3>Continuous Learning</h3>
+                                <p>Exploring technologies and learning through projects.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">What I work with</p>
+                    <h2>My <span>Skills</span></h2>
+                    <p>Technologies and tools I have been learning.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">Py</span>
+                            <h3>Python</h3>
+                        </div>
+                        <p>Programming and scripting</p>
+                        <div class="skill-track"><span style="--level:75%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">H</span>
+                            <h3>HTML</h3>
+                        </div>
+                        <p>Web page structure</p>
+                        <div class="skill-track"><span style="--level:85%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">C</span>
+                            <h3>CSS</h3>
+                        </div>
+                        <p>Responsive styling</p>
+                        <div class="skill-track"><span style="--level:80%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">JS</span>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <p>Interactive web features</p>
+                        <div class="skill-track"><span style="--level:65%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">Ja</span>
+                            <h3>Java</h3>
+                        </div>
+                        <p>Object-oriented programming</p>
+                        <div class="skill-track"><span style="--level:65%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">SQL</span>
+                            <h3>SQL</h3>
+                        </div>
+                        <p>Relational databases</p>
+                        <div class="skill-track"><span style="--level:65%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">M</span>
+                            <h3>MongoDB</h3>
+                        </div>
+                        <p>NoSQL database basics</p>
+                        <div class="skill-track"><span style="--level:55%"></span></div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-top"><span class="skill-symbol">Git</span>
+                            <h3>Git & GitHub</h3>
+                        </div>
+                        <p>Version control</p>
+                        <div class="skill-track"><span style="--level:70%"></span></div>
+                    </article>
+                </div>
+                <p class="skills-note">Adjust the skill bars to match your actual experience.</p>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="projects">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Featured <span>Projects</span></h2>
+                    <p>Replace sample descriptions with your completed projects.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-art art-blue">
+                            <span>01</span>
+                            <div class="art-window"><b>Student Management</b><small>Organize · Track · Learn</small></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <h3>Student Management System</h3>
+                            <p>A web project concept for organizing student information.</p>
+                            <a class="text-link" href="https://github.com/3713Prashant" target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-art art-purple">
+                            <span>02</span>
+                            <div class="art-window"><b>Portfolio</b><small>Design · Build · Improve</small></div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <h3>Personal Portfolio</h3>
+                            <p>A responsive portfolio showcasing my skills and work.</p>
+                            <a class="text-link" href="https://github.com/3713Prashant/student-portfolio" target="_blank" rel="noopener noreferrer">View repository ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-art art-cyan"><span>03</span>
+                            <div class="project-symbol">✦</div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags"><span>Learning</span><span>In progress</span></div>
+                            <h3>Upcoming Project</h3>
+                            <p>Add a real AI, IoT, or software project here.</p>
+                            <a class="text-link" href="https://github.com/3713Prashant" target="_blank" rel="noopener noreferrer">Explore GitHub ↗</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="project-note">Update sample projects and links before publishing.</p>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">MY LEARNING JOURNEY</p>
+                    <h2>My <span>Education</span></h2>
+                    <p>My academic background and continuous learning.</p>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="glass-card timeline-card">
+
+                            <p class="timeline-label">2023 – 2027</p>
+
+                            <h3>Bachelor of Engineering (BE)</h3>
+
+                            <h4>Computer Science and Engineering</h4>
+
+                            <p class="college-name">
+                                East Point College of Engineering and Technology
+                            </p>
+
+                            <p class="muted">
+                                Visvesvaraya Technological University (VTU), Belagavi
+                            </p>
+
+                            <div class="education-details">
+                                <div class="education-detail">
+                                    <span class="detail-icon">🎓</span>
+                                    <div>
+                                        <strong>Expected Graduation</strong>
+                                        <p>2027</p>
+                                    </div>
+                                </div>
+
+                                <div class="education-detail">
+                                    <span class="detail-icon">💻</span>
+                                    <div>
+                                        <strong>Field of Study</strong>
+                                        <p>Computer Science Engineering</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span class="education-status">
+            Currently Pursuing
+          </span>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt contact-section" id="contact">
+            <div class="container">
+                <div class="contact-panel">
+                    <p class="eyebrow">Have an opportunity?</p>
+                    <h2>Let's build something <span>great.</span></h2>
+                    <p>Let's connect about projects, learning opportunities and collaboration.</p>
+
+                    <div class="contact-actions">
+                        <a class="button" href="mailto:prashantguggari21@email.com">Email Me ↗</a>
+                        <button class="button button-outline" id="copyEmail" type="button" data-email="prashantguggari21@email.com">Copy Email</button>
+                    </div>
+                    <p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p>
+
+                    <div class="social-links centered">
+                        <a href="https://github.com/3713Prashant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                        <a href="https://www.linkedin.com/in/prashant-guggari-328416380/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="#home">Prashant<span>.</span></a>
+            <p>Designed and built with care · <span id="current-year"></span></p>
+            <a href="#home" class="footer-top">Back to top ↑</a>
         </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-
-            <h2>About Me</h2>
-
-            <p>
-                I am <strong>Prashant Guggari</strong>, a Bachelor of Engineering student in Computer Science Engineering with a strong interest in software development and technology.
-            </p>
-
-            <p>
-                My goal is to become a skilled <strong>Software Engineer</strong>. I am passionate about designing, developing, and improving software applications that solve real-world problems. I enjoy programming, web development, learning new technologies,
-                and building practical projects.
-            </p>
-
-            <p>
-                I am continuously developing my technical and problem-solving skills and looking forward to starting my career as a Software Engineer.
-            </p>
-
-            <div class="about-info">
-
-                <div>
-                    <h3>Education</h3>
-                    <p>
-                        Bachelor of Engineering<br> Computer Science Engineering
-                    </p>
-                </div>
-
-                <div>
-                    <h3>Career Goal</h3>
-                    <p>
-                        To become a professional Software Engineer and build reliable, efficient, and innovative software solutions.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <div class="about-box">
-
-        <p>
-            Hello! I am Prashant Guggari, a Computer Science Engineering student interested in technology and software development.
-
-
-            <!-- Skills -->
-            <section id="skills">
-
-                <h2 class="section-title">My Skills</h2>
-
-                <div class="skills-container">
-
-                    <div class="skill-card">
-                        <h3>Python</h3>
-                        <p>Programming & Problem Solving</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>HTML</h3>
-                        <p>Web Page Structure</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>CSS</h3>
-                        <p>Web Design & Styling</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Java</h3>
-                        <p>Object Oriented Programming</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>MongoDB</h3>
-                        <p>Database Management</p>
-                    </div>
-
-                    <div class="skill-card">
-                        <h3>Git</h3>
-                        <p>Version Control</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- Projects -->
-            <section id="projects">
-
-                <h2 class="section-title">My Projects</h2>
-
-                <div class="projects-container">
-
-                    <div class="project-card">
-
-                        <div class="project-number">01</div>
-
-                        <h3>Student Management System</h3>
-
-                        <p>
-                            A system designed to manage student information, records and academic details.
-                        </p>
-
-                        <p class="technology">
-                            Python • Database
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-card">
-
-                        <div class="project-number">02</div>
-
-                        <h3>Personal Portfolio</h3>
-
-                        <p>
-                            A responsive personal portfolio website to showcase my skills and projects.
-                        </p>
-
-                        <p class="technology">
-                            HTML • CSS • JavaScript
-                        </p>
-
-                    </div>
-
-
-                    <div class="project-card">
-
-                        <div class="project-number">03</div>
-
-                        <h3>Future Project</h3>
-
-                        <p>
-                            A new software project that I will build while learning advanced development.
-                        </p>
-
-                        <p class="technology">
-                            Coming Soon
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- Contact -->
-            <section id="contact">
-
-                <h2 class="section-title">Contact Me</h2>
-
-                <div class="contact-box">
-
-                    <p>
-                        Interested in connecting with me?
-                    </p>
-
-                    <p class="email">
-                        📧 prashantguggari21@email.com
-                    </p>
-
-                    <a href="mailto:your@email.com" class="btn">
-                Send Me an Email
-            </a>
-
-                </div>
-
-            </section>
-
-
-            <!-- Footer -->
-            <footer>
-
-                <h3>Prashant Guggari</h3>
-
-                <p>
-                    Computer Science Engineering Student
-                </p>
-
-                <p class="copyright">
-                    © 2026 Prashant Guggari. All Rights Reserved.
-                </p>
-
-            </footer>
-
-            <script src="script.js"></script>
-
+    </footer>
 </body>
 
 </html>
-```
